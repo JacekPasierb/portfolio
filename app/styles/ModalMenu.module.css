@@ -1,0 +1,40 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modalNav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .modalNav ul li {
+    margin: 20px 0;
+  }
+  
+  .modalNav ul li a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 32px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
