@@ -1,0 +1,50 @@
+/* .iconCard {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+ 
+}
+
+.icon {
+ 
+  width: 65px;
+  height: 65px;
+}
+.titleIcon {
+  color: #9AE8FF;
+  font-size: 18px;
+  text-align: center;
+} */
+
+.iconCard {
+  background-color: #9AE8FF; /* Biały lub bardzo jasny kolor tła */
+  border-radius: 15px; /* Zaokrąglone rogi */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtelny cień */
+  text-align: center; /* Wyśrodkowanie tekstu */
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animacja */
+  cursor: pointer;
+}
+
+.iconCard:hover {
+  transform: translateY(-5px); /* Podniesienie karty na hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Wzmocniony cień na hover */
+}
+
+.icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease; /* Animacja na hover */
+}
+
+.iconCard:hover .icon {
+  transform: scale(1.1); /* Powiększenie ikony na hover */
+}
+
+.titleIcon {
+  font-size: 18px; /* Rozmiar czcionki */
+  font-weight: 500;
+  color: #333; /* Kolor tekstu */
+}
