@@ -153,7 +153,7 @@ export const projectsData = [
       "Vercel",
     ],
     links: {
-      live: "https://portfolio-ohl2l9gr0-jaceks-projects-d9f05084.vercel.app/",
+      live: "https://portfolio-mauve-one-21.vercel.app/",
       frontend: "https://github.com/JacekPasierb/portfolio",
       backend: "",
     },
