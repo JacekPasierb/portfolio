@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import Image from "next/image";
 import React from "react";
@@ -18,7 +18,10 @@ const Header = () => {
           <h1>Jacek Pasierb</h1>
           <p>Full Stack Developer</p>
         </div>
-        <Link href="/about" className={pathname === "/about" ? style.active : undefined}>
+        <Link
+          href="/about"
+          className={pathname === "/about" ? style.active : undefined}
+        >
           <div className={style.imageContainer}>
             <Image
               src="/photo.jpg"
@@ -28,7 +31,10 @@ const Header = () => {
               style={{
                 borderRadius: "50%",
                 opacity: "60%",
-                border: pathname=== "/about" ? "2px solid #9AE8FF" : "2px solid Black ",
+                border:
+                  pathname === "/about"
+                    ? "2px solid #9AE8FF"
+                    : "2px solid Black ",
                 marginBottom: "5px",
               }}
             />

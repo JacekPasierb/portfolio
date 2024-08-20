@@ -142,6 +142,46 @@ export const iconsData = [
 
 export const projectsData = [
   {
+    title: "Portfolio - Strona osobista",
+    description:
+      "Stworzyłem tę stronę jako moją osobistą wizytówkę online, aby zaprezentować swoje umiejętności, doświadczenie zawodowe i projekty, nad którymi pracowałem. Strona została zbudowana przy użyciu Next.js, co zapewnia szybkie i efektywne ładowanie stron oraz możliwość generowania treści zarówno statycznie, jak i dynamicznie. W projekcie zastosowałem React do budowania interaktywnych komponentów oraz CSS Modules do zarządzania stylami, co pozwala na łatwe utrzymanie i skalowanie projektu. Strona jest w pełni responsywna, zapewniając optymalne doświadczenie użytkownika na różnych urządzeniach, od komputerów stacjonarnych po smartfony.",
+
+    techStack: [
+      "Next js",
+      "React",
+      "CSS Modules",
+      "Vercel",
+    ],
+    links: {
+      live: "https://portfolio-ohl2l9gr0-jaceks-projects-d9f05084.vercel.app/",
+      frontend: "https://github.com/JacekPasierb/portfolio",
+      backend: "",
+    },
+    image: "/projekt11.png",
+  },
+  {
+    title: "Invoices",
+    description:
+      "Projekt indywidualny - aplikacja do zarządzania fakturami w ramach kursu NEXT.JS. Dla testów: E-mail:user@nextmail.com Hasło:123456",
+
+    techStack: [
+      "React",
+      "Postgres",
+      "bcrypt",
+      "jsonWebToken",
+      "ORM",
+      "Next js",
+      "TypeScript",
+      "Zod",
+    ],
+    links: {
+      live: "https://next-js-learn-taupe-five.vercel.app/",
+      frontend: "https://github.com/JacekPasierb/NEXT_JS",
+      backend: "",
+    },
+    image: "/projekt3.png",
+  },
+  {
     title: "SO YUMMY",
     description:
       "Indywidualny projekt / So Yummy - platforma do odkrywania, zapisywania oraz zarządzania przepisami kulinarnymi w sposób intuicyjny i atrakcyjny wizualnie. ",
@@ -176,38 +216,11 @@ export const projectsData = [
     image: "/projekt2.jpg",
   },
   {
-    title: "Invoices",
-    description:
-      "Projekt indywidualny - aplikacja do zarządzania fakturami w ramach kursu NEXT.JS. Dla testów: E-mail:user@nextmail.com Hasło:123456",
-
-    techStack: [
-      "React",
-      "Postgres",
-      "bcrypt",
-      "jsonWebToken",
-      "ORM",
-      "Next js",
-      "TypeScript",
-      "Zod",
-    ],
-    links: {
-      live: "https://next-js-learn-taupe-five.vercel.app/",
-      frontend: "https://github.com/JacekPasierb/NEXT_JS",
-      backend: "",
-    },
-    image: "/projekt3.png",
-  },
-  {
     title: "Zadanie rekrutacyjne - React",
     description:
       "Interfejs użytkownika przeglądarki tagów udostępnianych przez API StackOverflow.",
 
-    techStack: [
-      "React",
-      "JavaScript",
-      "TypeScript",
-      "StoryBook",
-    ],
+    techStack: ["React", "JavaScript", "TypeScript", "StoryBook"],
     links: {
       live: "https://react-task-handle-stack.netlify.app/",
       frontend: "https://github.com/JacekPasierb/React-Task",
@@ -216,21 +229,81 @@ export const projectsData = [
     image: "/projekt6.webp",
   },
   {
+    title: "Pokręcona",
+    description:
+      "'https://pokręcona.pl' - strona internetowa reprezentująca Gabinet Kosmetyczny Pokręcona Karolina Żamojtel, oferujący zabiegi upiększające ciało i twarz, endermologia, kriolipoliza oraz stylizacje paznokci, rzęs brwi itp. Projekt jest napisany w React i skonfigurowany przy użyciu Vite. Nie korzysta obecnie z bazy danych, a dane są przechowywane do odczytu w plikach JSON w folderze 'data'.",
+
+    techStack: ["React", "JavaScript", "Redux Toolkit", "Vite"],
+    links: {
+      live: "https://xn--pokrcona-qeb.pl/",
+      frontend: "https://github.com/JacekPasierb/POKR-CONA/tree/main",
+      backend: "",
+    },
+    image: "/projekt8.png",
+  },
+  {
+    title: "Task Manager",
+    description:
+      "Projekt Indywidualny Rola: Frontend Developer Aplikacja Webowa do zarządzania zadaniami. Aplikacja działa na Netlify.",
+
+    techStack: ["React", "JavaScript", "Material UI", "Redux Toolkit"],
+    links: {
+      live: "https://task-manager-netlify.netlify.app/",
+      frontend: "https://github.com/JacekPasierb/Task-Manager-project",
+      backend: "",
+    },
+    image: "/projekt4.png",
+  },
+  {
+    title: "PhoneBook",
+    description:
+      "Projekt Indywidualny Rola: Frontend Developer Aplikacja Webowa do zarządzania kontaktami. Aplikacja działa na Netlify.",
+
+    techStack: ["React", "JavaScript", "Material UI", "Vite"],
+    links: {
+      live: "https://goit-react-hw-08-phonebook-netlify.netlify.app/",
+      frontend: "https://github.com/JacekPasierb/PhoneBook-project/tree/main",
+      backend: "",
+    },
+    image: "/projekt5.png",
+  },
+  {
     title: "Filmonetka",
     description:
       "Projekt Zespołowy Rola: Team Leader Aplikacja Webowa pobierająca bazę filmów z zewnętrznego API, umożliwiająca tworzenie własnych bibliotek użytkownika z filmami obejrzanymi lub do obejrzenia.",
 
-    techStack: [
-      "JavaScript",
-      "Sass"
-      
-    ],
+    techStack: ["JavaScript", "Sass"],
     links: {
       live: "https://jacekpasierb.github.io/filmonetka/index.html",
       frontend: "https://github.com/JacekPasierb/filmonetka",
       backend: "",
     },
-    image: "/projekt3.png",
+    image: "/projekt7.png",
+  },
+  {
+    title: "Image Search",
+    description: "Wyszukiwarka obrazków z wykorzystaniem zewnętrznego API",
+
+    techStack: ["Axios", "Lodash", "Simple Light Box"],
+    links: {
+      live: "https://jacekpasierb.github.io/goit-js-hw-11/",
+      frontend: "https://github.com/JacekPasierb/goit-js-hw-11",
+      backend: "",
+    },
+    image: "/projekt9.png",
+  },
+  {
+    title: "Strona Responsywna",
+    description:
+      "Projekt indywidualny - responsywna strona internetowa. Frontend ",
+
+    techStack: ["JavaScript", "HTML", "Responsive Design"],
+    links: {
+      live: "https://jacekpasierb.github.io/goit-markup-hw-08/",
+      frontend: "https://github.com/JacekPasierb/goit-markup-hw-08",
+      backend: "",
+    },
+    image: "/projekt10.png",
   },
   // dodaj więcej projektów...
 ];
