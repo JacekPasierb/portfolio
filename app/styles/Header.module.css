@@ -49,6 +49,12 @@
   font-weight: bold;
   transition: color 0.3s ease;
 }
+.aboutTextActive {
+  text-decoration: none;
+  color: #9ae8ff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
 
 .imageContainer:hover .aboutText {
   color: #9ae8ff;
@@ -60,6 +66,15 @@
   border: 2px solid black;
   margin-bottom: 5px;
   transition: border-color 0.3s ease;
+}
+
+.profileImageActive {
+
+  border-radius: 50%;
+  opacity: 60%;
+  border: 2px solid #9ae8ff;
+  margin-bottom: 5px;
+  transition: border-color 0.3s ease; 
 }
 
 .imageContainer:hover .profileImage {
@@ -116,6 +131,7 @@
   border: none;
   cursor: pointer;
 }
+
 
 @media (max-width: 1200px) {
   .hamburger {

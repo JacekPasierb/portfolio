@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
     <nav className={styles.navbar}>
       <ul className={styles.navLinks}>
         <li>
-          <Link href="/" className={pathname === "/" ? css.active : undefined}>
+          <Link href="/technologies" className={pathname === "/technologies" ? css.active : undefined}>
             <HomeIcon />
             <p className={`${poppins.className}`}>Technologie</p>
           </Link>

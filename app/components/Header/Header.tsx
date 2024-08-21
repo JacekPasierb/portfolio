@@ -31,8 +31,8 @@ const Header = () => {
           <p>Full Stack Developer</p>
         </div>
         <Link
-          href="/about"
-          className={pathname === "/about" ? style.active : undefined}
+          href="/"
+          className={pathname === "/" ? style.active : undefined}
         >
           <div className={style.imageContainer}>
             <Image
@@ -40,9 +40,9 @@ const Header = () => {
               width={150}
               height={150}
               alt="autor"
-              className={style.profileImage} // dodałem klasę dla stylów obrazu
+              className={ pathname==="/" ? style.profileImageActive: style.profileImage} // dodałem klasę dla stylów obrazu
             />
-            <span className={style.aboutText}>O mnie</span>
+            <span className={ pathname==="/" ? style.aboutTextActive: style.aboutText} >O mnie</span>
           </div>
         </Link>
       </div></div></div>
