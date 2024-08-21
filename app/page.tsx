@@ -36,10 +36,12 @@ const AboutPage: React.FC = () => {
             integrację z różnymi usługami i API.
           </p>
           <p>
-            Poza programowaniem, interesuję się <strong> technologiami </strong>
-            ,<strong> psychologią </strong> , oraz
-            <strong> podróżami </strong>. W wolnym czasie lubię czytać książki,
-            zwiedzać nowe miejsca i uczyć się nowych umiejętności.
+            Poza programowaniem lubię poświęcać czas na rozwijanie swoich
+            umiejętności, zarówno zawodowych, jak i osobistych. Cenię sobie
+            ciągłe doskonalenie, dlatego regularnie uczę się nowych technologii
+            i poszukuję inspiracji do tworzenia jeszcze lepszych rozwiązań. W
+            wolnym czasie lubię czytać książki, zwiedzać nowe miejsca, chodzić
+            po górach, wędkować czy oglądać filmy.
           </p>
         </div>
       </section>
