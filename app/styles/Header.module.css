@@ -1,25 +1,33 @@
 
-.header {
+.bgHeader {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
   width: 100%; 
   background-color: #e0d0c1a5;
-  padding-block: 10px;
+}
+.header {
+
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  box-shadow: 2px 2px 2px 2px #00000071;
   align-items: center; 
 }
-
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 .cvContainer {
   margin-left: 20px;
   display: flex;
   flex-direction: row;
   gap: 10px;
   align-items: center;
+  border-left:1px solid black;
+  padding-left: 20px;
+
 }
 
 
@@ -32,6 +40,7 @@
   flex-direction: column;
   align-items: center;
   cursor: pointer;
+  
 }
 
 .aboutText {
@@ -111,5 +120,9 @@
 @media (max-width: 1200px) {
   .hamburger {
     display: block;
+  }
+  .cvContainer {
+    border-left: none;
+    padding-left: 0;
   }
 }

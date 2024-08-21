@@ -17,7 +17,9 @@ const Header = () => {
   };
 
   return (
-    <header className={style.header}>
+    <header className={style.bgHeader}>
+      <div className={style.container}>
+        <div className={style.header}>
       <Navbar />
       <button className={style.hamburger} onClick={toggleModal}>
         ☰
@@ -43,7 +45,7 @@ const Header = () => {
             <span className={style.aboutText}>O mnie</span>
           </div>
         </Link>
-      </div>
+      </div></div></div>
     </header>
   );
 };

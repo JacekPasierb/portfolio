@@ -13,11 +13,13 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-top: 100px;
-}
-/* Mobile (default) */
-body {
   background-image: url("../../public/BgMobile1x.png");
+  padding-top: 150px;
+}
+@media screen and (min-width: 480px) {
+  body {
+    padding-top: 200px;
+  }
 }
 
 @media only screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2),
@@ -30,6 +32,7 @@ body {
 @media only screen and (min-width: 768px) {
   body {
     background-image: url("../../public/BgTablet1x.png");
+    padding-top: 100px;
   }
 }
 
