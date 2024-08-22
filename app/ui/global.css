@@ -12,9 +12,14 @@ body {
 
   background-size: cover;
   background-position: center;
+  
+
   background-repeat: no-repeat;
-  background-image: url("../../public/BgMobile1x.png");
   padding-top: 150px;
+}
+@media screen and (max-width: 768px) {
+  body {
+    background-image: url("../../public/BgMobile1x.png");  }
 }
 @media screen and (min-width: 480px) {
   body {
