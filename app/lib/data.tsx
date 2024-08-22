@@ -143,15 +143,12 @@ export const iconsData = [
 export const projectsData = [
   {
     title: "Portfolio - Strona osobista",
+    type: "Projekt indywidualny",
+    role: "Full Stack Developer",
     description:
       "Stworzyłem tę stronę jako moją osobistą wizytówkę online, aby zaprezentować swoje umiejętności, doświadczenie zawodowe i projekty, nad którymi pracowałem. Strona została zbudowana przy użyciu Next.js, co zapewnia szybkie i efektywne ładowanie stron oraz możliwość generowania treści zarówno statycznie, jak i dynamicznie. W projekcie zastosowałem React do budowania interaktywnych komponentów oraz CSS Modules do zarządzania stylami, co pozwala na łatwe utrzymanie i skalowanie projektu. Strona jest w pełni responsywna, zapewniając optymalne doświadczenie użytkownika na różnych urządzeniach, od komputerów stacjonarnych po smartfony.",
 
-    techStack: [
-      "Next js",
-      "React",
-      "CSS Modules",
-      "Vercel",
-    ],
+    techStack: ["Next js", "React", "CSS Modules", "Vercel"],
     links: {
       live: "https://portfolio-mauve-one-21.vercel.app/",
       frontend: "https://github.com/JacekPasierb/portfolio",
@@ -161,8 +158,10 @@ export const projectsData = [
   },
   {
     title: "Invoices",
+    type: "Projekt indywidualny",
+    role: "Full Stack Developer",
     description:
-      "Projekt indywidualny - aplikacja do zarządzania fakturami w ramach kursu NEXT.JS. Dla testów: E-mail:user@nextmail.com Hasło:123456",
+      "Aplikacja do zarządzania fakturami w ramach kursu NEXT.JS. Dla testów: E-mail:user@nextmail.com Hasło:123456",
 
     techStack: [
       "React",
@@ -183,9 +182,11 @@ export const projectsData = [
   },
   {
     title: "SO YUMMY",
+    type: "Projekt indywidualny",
+    role: "Full Stack Developer",
     description:
-      "Indywidualny projekt / So Yummy - platforma do odkrywania, zapisywania oraz zarządzania przepisami kulinarnymi w sposób intuicyjny i atrakcyjny wizualnie. ",
-    techStack: ["React", "Redux", "TypeScript", "Node.js", "MongoDB"],
+      "So Yummy - platforma do odkrywania, zapisywania oraz zarządzania przepisami kulinarnymi w sposób intuicyjny i atrakcyjny wizualnie. ",
+    techStack: ["React", "Redux", "TypeScript", "Node.js", "MongoDB", "Projekt Vite"],
     links: {
       live: "https://so-yummy-jack.netlify.app/welcome", // Link do działającej aplikacji
       frontend: "https://github.com/JacekPasierb/SO-YUMMY-APP", // Link do repozytorium frontendu
@@ -195,8 +196,10 @@ export const projectsData = [
   },
   {
     title: "Wallet",
+    type: "Projekt zespołowy",
+    role: "Backend Developer",
     description:
-      "Projekt zespołowy / Rola Backend Developer - aplikacja do zarządzania finansami.",
+      "Aplikacja do zarządzania finansami. Projekt w zgodzie z zasadami Scrum, codzienne Daily, Retrospekcje. Tworzenie Endpointów, wykorzystanie Swaggera.",
     techStack: [
       "Node",
       "Express",
@@ -217,6 +220,8 @@ export const projectsData = [
   },
   {
     title: "Zadanie rekrutacyjne - React",
+    type: "Projekt indywidualny",
+    role: "Full Stack Developer",
     description:
       "Interfejs użytkownika przeglądarki tagów udostępnianych przez API StackOverflow.",
 
@@ -230,6 +235,8 @@ export const projectsData = [
   },
   {
     title: "Pokręcona",
+    type: "Projekt indywidualny komercyjny",
+    role: "Full Stack Developer",
     description:
       "'https://pokręcona.pl' - strona internetowa reprezentująca Gabinet Kosmetyczny Pokręcona Karolina Żamojtel, oferujący zabiegi upiększające ciało i twarz, endermologia, kriolipoliza oraz stylizacje paznokci, rzęs brwi itp. Projekt jest napisany w React i skonfigurowany przy użyciu Vite. Nie korzysta obecnie z bazy danych, a dane są przechowywane do odczytu w plikach JSON w folderze 'data'.",
 
@@ -243,10 +250,12 @@ export const projectsData = [
   },
   {
     title: "Task Manager",
+    type: "Projekt indywidualny",
+    role: "Full Stack Developer",
     description:
-      "Projekt Indywidualny Rola: Frontend Developer Aplikacja Webowa do zarządzania zadaniami. Aplikacja działa na Netlify.",
+      "Aplikacja Webowa do zarządzania zadaniami. Aplikacja działa na Netlify.",
 
-    techStack: ["React", "JavaScript", "Material UI", "Redux Toolkit"],
+    techStack: ["React", "JavaScript", "Material UI", "Redux Toolkit", "Projekt Vite"],
     links: {
       live: "https://task-manager-netlify.netlify.app/",
       frontend: "https://github.com/JacekPasierb/Task-Manager-project",
@@ -256,10 +265,12 @@ export const projectsData = [
   },
   {
     title: "PhoneBook",
+    type: "Projekt indywidualny",
+    role: "Full Stack Developer",
     description:
-      "Projekt Indywidualny Rola: Frontend Developer Aplikacja Webowa do zarządzania kontaktami. Aplikacja działa na Netlify.",
+      "Aplikacja Webowa do zarządzania kontaktami. Aplikacja działa na Netlify.",
 
-    techStack: ["React", "JavaScript", "Material UI", "Vite"],
+    techStack: ["React", "JavaScript", "Material UI", "Redux Toolkit", "Project Vite"],
     links: {
       live: "https://goit-react-hw-08-phonebook-netlify.netlify.app/",
       frontend: "https://github.com/JacekPasierb/PhoneBook-project/tree/main",
@@ -268,11 +279,29 @@ export const projectsData = [
     image: "/projekt5.png",
   },
   {
-    title: "Filmonetka",
+    title: "IceCream",
+    type: "Projekt zespołowy",
+    role: "Frontend Developer",
     description:
-      "Projekt Zespołowy Rola: Team Leader Aplikacja Webowa pobierająca bazę filmów z zewnętrznego API, umożliwiająca tworzenie własnych bibliotek użytkownika z filmami obejrzanymi lub do obejrzenia.",
+      "Projektem jest strona internetowa dla lodziarni, która miała na celu nauczyć i pokazać umiejętność pracy w zespole. Codzienne spotkania, korzystanie z Trello i Slack. Praca z Figmą.",
 
-    techStack: ["JavaScript", "Sass"],
+    techStack: ["HTML", "CSS", "Responsive Web Design", "Figma", "Trelo"],
+    links: {
+      live: "https://joanna-jasinska.github.io/goit-page-template-2022-12-13/",
+      frontend:
+        "https://github.com/Joanna-Jasinska/goit-page-template-2022-12-13",
+      backend: "",
+    },
+    image: "/projekt13.png",
+  },
+  {
+    title: "Filmonetka",
+    type: "Projekt zespołowy",
+    role: "Team Leader / Frontend Developer",
+    description:
+      "Aplikacja Webowa pobierająca bazę filmów z zewnętrznego API, umożliwiająca tworzenie własnych bibliotek użytkownika z filmami obejrzanymi lub do obejrzenia. Praca zgodnie z zasadami Scrum, codzienne Daily, Retrospekcje. Rozwiązywanie konfliktów na Github. Korzytsanie z makiety na Figma.",
+
+    techStack: ["JavaScript", "Sass", "GitHub", "Figma", "Trelo"],
     links: {
       live: "https://jacekpasierb.github.io/filmonetka/index.html",
       frontend: "https://github.com/JacekPasierb/filmonetka",
@@ -282,6 +311,8 @@ export const projectsData = [
   },
   {
     title: "Image Search",
+    type: "Projekt indywidualny",
+    role: "Full Stack Developer",
     description: "Wyszukiwarka obrazków z wykorzystaniem zewnętrznego API",
 
     techStack: ["Axios", "Lodash", "Simple Light Box"],
@@ -294,10 +325,12 @@ export const projectsData = [
   },
   {
     title: "Strona Responsywna",
+    type: "Projekt indywidualny",
+    role: "Full Stack Developer",
     description:
-      "Projekt indywidualny - responsywna strona internetowa. Frontend ",
+      "Projekt to strona internetowa, pokazująca umiejętności Frontendowe. Cała strona jest responsywna dla różnych rozdzielczości, dobrze wygląda na telefonach, tabletach i laptopach. ",
 
-    techStack: ["JavaScript", "HTML", "Responsive Design"],
+    techStack: ["HTML", "Responsive Design", "SASS", "Figma"],
     links: {
       live: "https://jacekpasierb.github.io/goit-markup-hw-08/",
       frontend: "https://github.com/JacekPasierb/goit-markup-hw-08",
@@ -305,5 +338,5 @@ export const projectsData = [
     },
     image: "/projekt10.png",
   },
-  // dodaj więcej projektów...
+
 ];

@@ -14,6 +14,8 @@ export default function ProjectsPage() {
               key={project.title}
               image={project.image}
               title={project.title}
+              type={project.type}
+              role={project.role}
               description={project.description}
               techStack={project.techStack}
               linkLive={project.links.live}

@@ -5,6 +5,8 @@ import css from "./ProjectCard.module.css";
 interface ProjectCardProps {
   image: string;
   title: string;
+  type: string;
+  role: string;
   description: string;
   techStack: string[];
   linkLive: string;
@@ -16,6 +18,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   image,
   title,
   description,
+  type,
+  role,
   techStack,
   linkLive,
   linkFrontend,
@@ -32,7 +36,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       />
       <div className={css.cardContent}>
         <h3 className={css.projectTitle}>{title}</h3>
-        <p className={css.projectDescription}>{description}</p>
+        <p>
+          <strong>Projekt: </strong>
+          {type}
+        </p>
+        <p>
+          <strong>Rola:</strong> {role}
+        </p>
+        <p className={css.projectDescription}><strong> Opis: </strong> {description} </p>
         <div className={css.techStack}>
           {techStack.map((tech) => (
             <span key={tech} className={css.techItem}>
