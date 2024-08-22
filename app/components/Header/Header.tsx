@@ -43,7 +43,9 @@ const Header = () => {
               className={ pathname==="/" ? style.profileImageActive: style.profileImage} // dodałem klasę dla stylów obrazu
             />
             <span className={ pathname==="/" ? style.aboutTextActive: style.aboutText} >O mnie</span>
+            <p className={style.mod}>Każdy z nas Tworzy inną historie..</p>          
           </div>
+          
         </Link>
       </div></div></div>
     </header>
