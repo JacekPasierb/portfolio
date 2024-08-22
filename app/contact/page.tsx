@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import styles from '../styles/Contact.module.css';
+import ContactForm from '../components/ContactForm/ContactForm';
 
 const ContactPage: React.FC = () => {
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
@@ -29,43 +30,14 @@ const ContactPage: React.FC = () => {
       <div className={styles.contactInfo}>
         <div className={styles.infoItem}>
           <h2>Telefon</h2>
-          <p>+48 123 456 789</p>
+          <p>+48 724 862 714</p>
         </div>
         <div className={styles.infoItem}>
           <h2>Email</h2>
-          <p>jacek@example.com</p>
+          <p>jpasierb@proton.me</p>
         </div>
       </div>
-      <form onSubmit={handleSubmit} className={styles.form}>
-        <label htmlFor="name">Imię:</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          value={formState.name}
-          onChange={handleChange}
-          required
-        />
-        <label htmlFor="email">Email:</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          value={formState.email}
-          onChange={handleChange}
-          required
-        />
-        <label htmlFor="message">Wiadomość:</label>
-        <textarea
-          id="message"
-          name="message"
-          value={formState.message}
-          onChange={handleChange}
-          required
-        />
-        <button type="submit" className={styles.submitButton}>Wyślij</button>
-      </form>
-      {status && <p className={styles.statusMessage}>{status}</p>}
+      
     </main>
   );
 };
