@@ -270,11 +270,11 @@ export const projectsData = [
     description:
       "Aplikacja Webowa do zarządzania kontaktami. Aplikacja działa na Netlify.",
 
-    techStack: ["React", "JavaScript", "Material UI", "Redux Toolkit", "Project Vite"],
+    techStack: ["React", "JavaScript", "Material UI", "Redux Toolkit", "MongoDB", "Moongose","Passport", "JWT", "SendGrid", "Project Vite"],
     links: {
       live: "https://goit-react-hw-08-phonebook-netlify.netlify.app/",
       frontend: "https://github.com/JacekPasierb/PhoneBook-project/tree/main",
-      backend: "",
+      backend: "https://github.com/JacekPasierb/nodejs-homework-template",
     },
     image: "/projekt5.png",
   },
