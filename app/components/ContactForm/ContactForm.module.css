@@ -1,0 +1,102 @@
+.form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border: 1px solid #eaeaea;
+  box-sizing: border-box;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.formField {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+.formField:focus {
+  border-color: #9ae8ff;
+  box-shadow: 0 0 8px rgba(154, 232, 255, 0.25);
+  outline: none;
+}
+
+.formField[as="textarea"] {
+  height: 120px;
+  resize: vertical;
+}
+
+.error {
+  color: #d9534f;
+  margin-top: 4px;
+  font-size: 14px;
+}
+
+.submitButton {
+  background: #9ae8ff;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 14px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.submitButton:disabled {
+  background: #b3d9ff;
+  cursor: not-allowed;
+}
+
+.submitButton:not(:disabled):hover {
+  background: #8cd6ff;
+  transform: scale(1.05);
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.formField.shake {
+  animation: shake 0.9s ease infinite;
+  border-color: red;
+}
