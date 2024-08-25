@@ -6,6 +6,7 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY!);
 export async function POST(request: Request) {
   try {
     const { name, email, message } = await request.json();
+    console.log("SENDGRID_API_KEY:", process.env.SENDGRID_API_KEY);
 
     const msg = {
       to: "jack_byk@o2.pl",
