@@ -6,7 +6,7 @@ import {
   FormikErrors,
   ErrorMessage,
 } from "formik";
-import React from "react";
+import React, { useState } from "react";
 import css from "./ContactForm.module.css";
 import * as Yup from "yup";
 
@@ -17,18 +17,42 @@ interface FormValues {
 }
 
 const ContactForm = () => {
+  const [statusMsg, setStatusMsg] = useState("");
+
   const initialValues = {
     name: "",
     email: "",
     message: "",
   };
 
-  const onSubmit = (
+  const onSubmit = async (
     values: FormValues,
-    { setSubmitting }: FormikHelpers<FormValues>
+    { setSubmitting, resetForm }: FormikHelpers<FormValues>
   ) => {
-    console.log("Form data", values);
-    setSubmitting(false);
+    try {
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setStatusMsg(
+          "Dzięki za wiadomość, odpowiem najszybciej jak to możliwe."
+        );
+        resetForm();
+      } else {
+        setStatusMsg("Wystąpił błąd podczas wysyłania wiadomości.");
+      }
+    } catch (error) {
+      setStatusMsg("Wystąpił błąd podczas wysyłania wiadomości.");
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -36,19 +60,21 @@ const ContactForm = () => {
       initialValues={initialValues}
       validationSchema={Yup.object({
         name: Yup.string()
-          .max(15, "Must be 15 characters or less")
-          .required("Required"),
-        email: Yup.string().email("Invalid email adress").required("Required"),
-        message: Yup.string().required(),
+          .max(25, "Pole może zawierać max 25 znaków !")
+          .required("Pole imię i nazwisko jest wymagane"),
+        email: Yup.string()
+          .email("Niepoprawny format email")
+          .required("Pole email jest wymagane !"),
+        message: Yup.string().required("Pole wiadomości jest puste !"),
       })}
       onSubmit={onSubmit}
     >
-      {({ isSubmitting, errors, touched }) => (
+      {({ isSubmitting, errors, touched, isValid, dirty }) => (
         <Form className={css.form}>
-              <h2 className={css.title}>Napisz wiadomość</h2>
+          <h2 className={css.title}>Napisz wiadomość</h2>
           <div className={css.formGroup}>
             <label htmlFor="name" className={css.label}>
-              Name
+              Imię i Nazwisko
             </label>
             <Field
               type="text"
@@ -74,7 +100,7 @@ const ContactForm = () => {
           </div>
           <div className={css.formGroup}>
             <label htmlFor="message" className={css.label}>
-              Message
+              Treść Wiadomości
             </label>
             <Field
               name="message"
@@ -91,11 +117,12 @@ const ContactForm = () => {
           </div>
           <button
             type="submit"
-            disabled={isSubmitting}
+            disabled={isSubmitting || !isValid || !dirty}
             className={css.submitButton}
           >
             Wyślij
           </button>
+          {statusMsg && <p className={css.statusMsg}>{statusMsg}</p>}
         </Form>
       )}
     </Formik>

@@ -16,6 +16,10 @@
     text-align: center;
     margin-bottom: 20px;
 }
+.statusMsg {
+    margin-top: 10px;
+    text-align: center;
+}
 .formGroup {
   margin-bottom: 20px;
 }
@@ -37,6 +41,7 @@
   line-height: 1.5;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
   box-sizing: border-box;
+  resize: none;
 }
 
 .formField:focus {
@@ -45,10 +50,12 @@
   outline: none;
 }
 
-.formField[as="textarea"] {
-  height: 120px;
-  resize: vertical;
-}
+.formField textarea {
+    height: 120px; /* Dostosuj wysokość */
+    resize: none; /* Blokada zmiany rozmiaru */
+  }
+
+
 
 .error {
   color: #d9534f;
